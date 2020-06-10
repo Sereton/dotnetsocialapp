@@ -1,0 +1,14 @@
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Application.deps.json
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Application.dll
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Application.pdb
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Domain.dll
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Persistence.dll
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Domain.pdb
+C:\netcorec#\SocialApp\Application\bin\Debug\netstandard2.0\Persistence.pdb
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.csprojAssemblyReference.cache
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.AssemblyInfoInputs.cache
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.AssemblyInfo.cs
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.csproj.CoreCompileInputs.cache
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.csproj.CopyComplete
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.dll
+C:\netcorec#\SocialApp\Application\obj\Debug\netstandard2.0\Application.pdb

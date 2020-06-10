@@ -1,0 +1,12 @@
+C:\netcorec#\SocialApp\Persistence\bin\Debug\netstandard2.0\Persistence.deps.json
+C:\netcorec#\SocialApp\Persistence\bin\Debug\netstandard2.0\Persistence.dll
+C:\netcorec#\SocialApp\Persistence\bin\Debug\netstandard2.0\Persistence.pdb
+C:\netcorec#\SocialApp\Persistence\bin\Debug\netstandard2.0\Domain.dll
+C:\netcorec#\SocialApp\Persistence\bin\Debug\netstandard2.0\Domain.pdb
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.csprojAssemblyReference.cache
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CopyComplete
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.dll
+C:\netcorec#\SocialApp\Persistence\obj\Debug\netstandard2.0\Persistence.pdb
