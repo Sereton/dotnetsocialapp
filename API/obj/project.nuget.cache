@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fBopM/4WNxkzTarS9YUi7iHOhXlgcjJ+eKMXgjNAHqdlkuj6f0+WpvAxPkxg6z67aFXmgOx56yXQDqdUu6eV9Q==",
+  "dgSpecHash": "9c2wZ2V/NvFL7Gg3N5vPvRP7POEFZOujm0sP9Ztguu/3BesQCa/SoXBvZ0ili9zGRP0K9sthTRuMJ/76bqUEsg==",
   "success": true,
-  "projectFilePath": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
+  "projectFilePath": "C:\\netcorec#\\SocialApp\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
