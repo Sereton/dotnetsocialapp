@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\netcorec#\\SocialApp\\API\\API.csproj": {}
+    "C:\\netcorec#\\SocialApp\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\netcorec#\\SocialApp\\API\\API.csproj": {
+    "C:\\netcorec#\\SocialApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\netcorec#\\SocialApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\netcorec#\\SocialApp\\API\\API.csproj",
+        "projectPath": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "c:\\netcorec#\\SocialApp\\API\\obj\\",
+        "outputPath": "C:\\netcorec#\\SocialApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
-                "projectPath": "c:\\netcorec#\\SocialApp\\Application\\Application.csproj"
+              "C:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
+                "projectPath": "C:\\netcorec#\\SocialApp\\Application\\Application.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "c:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
+    "C:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\netcorec#\\SocialApp\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\netcorec#\\SocialApp\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\netcorec#\\SocialApp\\Application\\Application.csproj",
+        "projectPath": "C:\\netcorec#\\SocialApp\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "c:\\netcorec#\\SocialApp\\Application\\obj\\",
+        "outputPath": "C:\\netcorec#\\SocialApp\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,11 +98,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
+              "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
               },
-              "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj"
+              "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
+    "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
+        "projectPath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "c:\\netcorec#\\SocialApp\\Domain\\obj\\",
+        "outputPath": "C:\\netcorec#\\SocialApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -199,14 +199,14 @@
         }
       }
     },
-    "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj": {
+    "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "c:\\netcorec#\\SocialApp\\Persistence\\obj\\",
+        "outputPath": "C:\\netcorec#\\SocialApp\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -225,8 +225,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
+              "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
               }
             }
           }

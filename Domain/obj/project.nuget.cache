@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sDB/6K+AAfat+bJe/lwquH+2c3hDaClkK9PpIsNyVialEJKIMPNPaQ47MRzs9p36+cesRzFOY5dju8ruAmXNxw==",
+  "dgSpecHash": "tdXwPzxw++ZGEhN/tgCKM3C8O3bc0Q6yN7gfMv72dhAD5iFQe/7V1JiGN3njSKQaNHz1Pn76TdN13sVpPixu/g==",
   "success": true,
-  "projectFilePath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3fN7CrU4R/SuiGiJJf+vBrzttq1ZE+UtE+m3B7pYStpNg4AqLf8O4x2EvZZ9LL30GbgMzMucHxQuWcRz34mJbQ==",
+  "dgSpecHash": "I5cA6dJyA8KPSWkFOdUdjgevyQAL6ytPNt3g7ZsLuPMgB+aTh82SCVhTSsdtuGMS52Kfvf4JO3I1/WsjwE/ERg==",
   "success": true,
-  "projectFilePath": "c:\\netcorec#\\SocialApp\\Application\\Application.csproj",
+  "projectFilePath": "C:\\netcorec#\\SocialApp\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

@@ -1258,11 +1258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\netcorec#\\SocialApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\netcorec#\\SocialApp\\API\\API.csproj",
+      "projectPath": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "c:\\netcorec#\\SocialApp\\API\\obj\\",
+      "outputPath": "C:\\netcorec#\\SocialApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1281,8 +1281,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
-              "projectPath": "c:\\netcorec#\\SocialApp\\Application\\Application.csproj"
+            "C:\\netcorec#\\SocialApp\\Application\\Application.csproj": {
+              "projectPath": "C:\\netcorec#\\SocialApp\\Application\\Application.csproj"
             }
           }
         }
