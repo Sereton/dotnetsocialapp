@@ -1,62 +1,27 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using Application.Activities;
 using Domain;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Persistence;
 
-
-
-namespace socialapp.API.Controllers
+namespace API.Controllers
 {
-    
-        [Route("api/[controller]")]
-        [ApiController]
-    public class ActivitiesController : ControllerBase
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ActivitiesController : ControllerBase //No need view since we are using React
     {
-        private readonly DataContext _context;
-
-        public ActivitiesController(DataContext context)
+        private readonly IMediator _mediator;
+        public ActivitiesController(IMediator mediator)
         {
-           _context = context;
-
-
+            _mediator = mediator;
         }
 
-        // GET api/activities
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Activity>>> Get()
-        {
-            var activities = await _context.Activities.ToListAsync();
-            return Ok(activities);
-        }
 
-        // GET api/activities
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Activity>> Get(int id)
-        {
-           var activity = await _context.Activities.FindAsync(id);
-           return Ok(activity);
-        }
-
-        // POST api/activities
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/activities/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/activities/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+        public async Task<ActionResult<List<Activity>>> List(){
+            return await _mediator.Send(new List.Query());
         }
     }
-    }
+}
