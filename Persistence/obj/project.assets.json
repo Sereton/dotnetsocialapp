@@ -1480,11 +1480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
+      "projectPath": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\netcorec#\\SocialApp\\Persistence\\obj\\",
+      "outputPath": "c:\\netcorec#\\SocialApp\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1503,8 +1503,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
+            "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj"
             }
           }
         }

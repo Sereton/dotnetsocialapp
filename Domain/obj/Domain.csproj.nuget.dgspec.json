@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {}
+    "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
+    "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
+        "projectPath": "c:\\netcorec#\\SocialApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\netcorec#\\SocialApp\\Domain\\obj\\",
+        "outputPath": "c:\\netcorec#\\SocialApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

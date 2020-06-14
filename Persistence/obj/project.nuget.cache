@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s4RX2pT/XUeRiOzU7aHcX/0xE5QPoOSxP/kLsEG2AxaB5TjQYSjXe5sfRjhVCuVuFd9owsWD95ny1CxNYY9GMg==",
+  "dgSpecHash": "LQF9sIZ4LDasvajZfejjvDAzELKnprUjJR+v2SQed2q220tnyX8eSjqXAnXmDwxX5DgYzh6EIstw3Om8VDOyUw==",
   "success": true,
-  "projectFilePath": "C:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
+  "projectFilePath": "c:\\netcorec#\\SocialApp\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

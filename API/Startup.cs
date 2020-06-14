@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Persistence;
 using Microsoft.EntityFrameworkCore.Design;
+using MediatR;
 
 namespace API
 {
@@ -39,6 +40,7 @@ namespace API
                 });
             });
             services.AddControllers();
+            services.AddMediatR(ypeof(List.Handler).Assembly);
 
         }
 

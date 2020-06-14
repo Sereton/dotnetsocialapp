@@ -9,14 +9,14 @@ class App extends Component {
 
 
   state = {
-    values: [],
+    activities: [],
   }
 
   componentDidMount(){
-    axios.get('http://localhost:5000/api/values')
+    axios.get('http://localhost:5000/api/activities')
     .then((response)=>{
       
-      this.setState({values:response.data});
+      this.setState({activities:response.data});
       
     })
     
@@ -33,7 +33,7 @@ class App extends Component {
         <Header.Content>PIMPOM</Header.Content>
       </Header>
         <List>
-        {this.state.values.map((ve: any)=>(<ListItem key={ve.id}>{ve.name}</ListItem>))}
+        {this.state.activities.map((acti: any)=>(<ListItem key={acti.id}>La actividad {acti.name} sera en el venue {acti.venue}</ListItem>))}
         </List>
       </div>
     );
