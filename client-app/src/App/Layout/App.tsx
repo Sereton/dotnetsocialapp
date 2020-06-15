@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {  useState, useEffect } from 'react';
 import { Header, Icon, List, ListItem} from 'semantic-ui-react';
 
 import axios from 'axios';
@@ -9,27 +9,23 @@ interface IState{
   activities: IActivity[];
 }
 
-class App extends Component<{}, IState> {
+const App =  ()=> {
 
 
-  readonly state: IState = {
-    activities: [],
-    
-  }
+  const [activities, setActivities] = useState<IActivity[]>([]);
+  
+  useEffect(()=>{
 
- 
-  componentDidMount(){
     axios.get<IActivity[]>('http://localhost:5000/api/activities')
     .then((response)=>{
-      
-      this.setState( {activities: response.data} );
+      setActivities( response.data );
+  })},[]);
 
-      
-    });
-    
-  }
  
-  render(){
+
+  
+ 
+  
 
     
 
@@ -40,11 +36,11 @@ class App extends Component<{}, IState> {
         <Header.Content>PIMPOM</Header.Content>
       </Header>
         <List>
-        {this.state.activities.map((acti)=>(<ListItem key={acti.id}>La actividad cool {acti.title} sera en el venue {acti.venue}</ListItem>))}
+        {activities.map((acti: IActivity)=>(<ListItem key={acti.id}>La actividad coolito {acti.title} sera en el venue {acti.venue}</ListItem>))}
         </List>
       </div>
     );
-  }
+  
 }
 
 export default App;
