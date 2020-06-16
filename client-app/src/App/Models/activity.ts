@@ -4,6 +4,6 @@ export interface IActivity {
     description: string;
     city: string;
     venue: string;
-    date: Date;
+    date: string;
     category: string;
 }
