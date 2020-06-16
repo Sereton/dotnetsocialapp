@@ -1,8 +1,9 @@
 import React, {  useState, useEffect } from 'react';
-import { Header, Icon, List, ListItem} from 'semantic-ui-react';
+import {  List, ListItem} from 'semantic-ui-react';
 
 import axios from 'axios';
 import { IActivity } from '../Models/activity';
+import { NavBar } from '../../Features/Nav/NavBar';
 
 
 interface IState{
@@ -31,13 +32,12 @@ const App =  ()=> {
 
     return (
       <div >
-      <Header as='h2'>
-        <Icon name='users'/>
-        <Header.Content>PIMPOM</Header.Content>
-      </Header>
+     <NavBar />
+       
         <List>
         {activities.map((acti: IActivity)=>(<ListItem key={acti.id}>La actividad coolito {acti.title} sera en el venue {acti.venue}</ListItem>))}
         </List>
+       
       </div>
     );
   
