@@ -8,7 +8,7 @@ export const NavBar = () => {
         <Menu.Item
           header >
 
-              <img src="/assets/logo.png" alt="logo"/>
+              <img src="/assets/logo.png" alt="logo" style={{marginRight: "5px"}}/> Unamonos
           </Menu.Item>
           
         
@@ -20,7 +20,7 @@ export const NavBar = () => {
          
          
         >
-            <Button positive content= "Create Activity" />
+            <Button color="brown" content= "Create Activity" />
         </Menu.Item>
         </Container>
       </Menu>

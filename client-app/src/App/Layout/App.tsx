@@ -1,9 +1,10 @@
-import React, {  useState, useEffect } from 'react';
-import {  List, ListItem} from 'semantic-ui-react';
+import React, {  useState, useEffect, Fragment } from 'react';
+import {  Container} from 'semantic-ui-react';
 
 import axios from 'axios';
 import { IActivity } from '../Models/activity';
 import { NavBar } from '../../Features/Nav/NavBar';
+import { ActivitiesDashboard } from '../../Features/Activities/Dashboard/ActivitiesDashboard';
 
 
 interface IState{
@@ -31,14 +32,12 @@ const App =  ()=> {
     
 
     return (
-      <div >
+      <Fragment>
      <NavBar />
-       
-        <List>
-        {activities.map((acti: IActivity)=>(<ListItem key={acti.id}>La actividad coolito {acti.title} sera en el venue {acti.venue}</ListItem>))}
-        </List>
-       
-      </div>
+     <Container style={{marginTop: '7rem'}}>
+      <ActivitiesDashboard activities={activities} />
+     </Container>
+      </Fragment>
     );
   
 }
