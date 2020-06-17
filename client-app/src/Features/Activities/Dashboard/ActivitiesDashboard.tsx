@@ -16,23 +16,27 @@ interface IProps {
     
     editActivity: (activity: IActivity)=> void;
     deleteActivity: (id: string)=> void;
+    submitting: boolean;
+    activityTarget: string;
+    
     
 }
 
-export const ActivitiesDashboard: React.FC<IProps> = ({activities, selectActivity, selectedActivity,editMode,setEditMode, setSelectedActivity, createActivity, editActivity, deleteActivity}) => {
+export const ActivitiesDashboard: React.FC<IProps> = ({activities, selectActivity, selectedActivity,editMode,setEditMode, setSelectedActivity, createActivity, editActivity, deleteActivity,submitting, activityTarget}) => {
     return (
         <Grid>
             
             <Grid.Column width={10}>
 
-                <ActivityList activities={activities} selectActivity ={selectActivity} deleteActivity={deleteActivity}/>
+                <ActivityList activities={activities} selectActivity ={selectActivity} deleteActivity={deleteActivity} submitting={submitting} activityTarget={activityTarget}/>
             
       
             </Grid.Column>
             <Grid.Column width={6}>
 
              {selectedActivity && !editMode && <ActivityDetails selectedActivity={selectedActivity} showEdit={setEditMode} setSelectedActivity={setSelectedActivity}/>}
-              {editMode && (<ActivityForm key={selectedActivity &&selectedActivity.id || 0 } activity={selectedActivity!} showEdit={setEditMode} editActivity={editActivity} createActivity={createActivity} />)}
+             {/* eslint-disable-next-line */}
+              {editMode && (<ActivityForm key={selectedActivity && selectedActivity.id || 0 } activity={selectedActivity!} showEdit={setEditMode} editActivity={editActivity} createActivity={createActivity} submitting={submitting}/>)}
         
       
             </Grid.Column>

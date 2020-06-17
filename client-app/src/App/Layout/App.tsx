@@ -6,6 +6,7 @@ import { IActivity } from '../Models/activity';
 import { NavBar } from '../../Features/Nav/NavBar';
 import { ActivitiesDashboard } from '../../Features/Activities/Dashboard/ActivitiesDashboard';
 import Agent from '../Api/agent';
+import { LoadingComponent } from './LoadingComponent';
 
 
 
@@ -19,6 +20,9 @@ const App =  ()=> {
   const [activities, setActivities] = useState<IActivity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(null);
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const[submitting, setSubmitting]  = useState(false);
+  const [activityTarget, setActivityTarget]= useState('');
 
   const handleSelectActivity = (id: string) => { 
   
@@ -34,29 +38,36 @@ const App =  ()=> {
   }
 
   const handleCreateActivity = (activity: IActivity)=>{
+    setSubmitting(true);
     Agent.Activities.create(activity)
     .then(()=>{
       setActivities([...activities, activity]);
     setSelectedActivity(activity);
     setEditMode(false);
-    });
+    }).then(()=>setSubmitting(false));
   };
   const handleDeleteActivity = (id:string)=>{
+
+    setSubmitting(true);
+    setActivityTarget(id);
     Agent.Activities.delete(id)
     .then(()=>{
       setActivities(activities.filter(act=>act.id !== id));
     
     setEditMode(false);
-    });
+    }).then(()=>setSubmitting(false));
   };
 
+ 
+
   const handleEditActivity = (activity: IActivity)=>{
+    setSubmitting(true);
     Agent.Activities.update(activity)
     .then(()=>{
       setActivities([...activities.filter(a=>a.id !==activity.id),activity]);
     setSelectedActivity(activity);
     setEditMode(false);
-    });
+    }).then(()=>setSubmitting(false));
   };
   
   useEffect(()=>{
@@ -71,13 +82,13 @@ const App =  ()=> {
         activities.push(activity);
       })
       setActivities( activities );
-  })},[]);
+  }).then(()=> setLoading(false))},[]);
 
  
 
   
  
-  
+  if(loading)  return <LoadingComponent inverted ={true} content="Loading Activities ..."/>
 
     
 
@@ -86,7 +97,8 @@ const App =  ()=> {
      <NavBar openCreateForm={handleOpenCreateForm} />
      <Container style={{marginTop: '7rem'}}>
       <ActivitiesDashboard activities={activities} selectActivity ={handleSelectActivity} selectedActivity={selectedActivity} editMode={editMode}  setEditMode={setEditMode}  setSelectedActivity={setSelectedActivity} 
-      createActivity={handleCreateActivity} editActivity={handleEditActivity} deleteActivity={handleDeleteActivity}/>
+      createActivity={handleCreateActivity} editActivity={handleEditActivity} deleteActivity={handleDeleteActivity}
+      submitting={submitting} activityTarget={activityTarget} />
      </Container>
       </Fragment>
     );

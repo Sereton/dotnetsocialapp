@@ -9,11 +9,12 @@ interface IProps{
     createActivity: (activity: IActivity)=> void;
     
     editActivity: (activity: IActivity)=> void;
+    submitting: boolean;
 }
 
 // just renaming activity with the activity: newName
     
-export const ActivityForm: React.FC<IProps> = ({showEdit,activity: initializeFormState, createActivity, editActivity}) => { 
+export const ActivityForm: React.FC<IProps> = ({showEdit,activity: initializeFormState, createActivity, editActivity,submitting}) => { 
     const initializeForm =() => {
        return initializeFormState ? initializeFormState : {id:'', title:'',category:'',description:'',date:'',city:'',venue:''};
     }
@@ -45,7 +46,7 @@ export const ActivityForm: React.FC<IProps> = ({showEdit,activity: initializeFor
             <Form.Input type='date' name="date" placeholder='Date' value={activity.date} onChange={formInputsHandler}/>
             <Form.Input placeholder='City' name="city" value={activity.city} onChange={formInputsHandler} />
             <Form.Input placeholder='Venue' name="venue" value={activity.venue} onChange={formInputsHandler} />
-            <Button content="Submit" onClick={handleSubmit}  floated="right" color="brown" type="submit"  onChange={formInputsHandler}/>
+            <Button content="Submit" loading={submitting} onClick={handleSubmit}  floated="right" color="brown" type="submit"  onChange={formInputsHandler}/>
             <Button onClick={()=> showEdit(false)} content="Cancel"   floated="right"  type="submit" />
             </Form>
         </Segment>
