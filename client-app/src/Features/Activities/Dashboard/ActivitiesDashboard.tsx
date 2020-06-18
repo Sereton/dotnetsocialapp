@@ -22,9 +22,7 @@ const ActivitiesDashboard: React.FC = () => {
             </Grid.Column>
             <Grid.Column width={6}>
 
-             {selectedActivity && !editMode && <ActivityDetails   />}
-             {/* eslint-disable-next-line */}
-              {editMode && (<ActivityForm key={selectedActivity && selectedActivity.id || 0 } />)}
+          <h2>Activity Filters</h2>
         
       
             </Grid.Column>
