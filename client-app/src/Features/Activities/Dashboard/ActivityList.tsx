@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Item,  Button, Label, Segment} from 'semantic-ui-react'
 import { IActivity } from '../../../App/Models/activity'
+import { observer } from 'mobx-react-lite'
+import ActivityStore from '../../../App/stores/activityStore'
 
 interface IProps {
-    activities: IActivity[];
-    selectActivity: (id: string)=> void; 
+ 
+    
     deleteActivity: (id: string)=> void;
     activityTarget: string;
     submitting: boolean;
 
 }
 
-export const ActivityList: React.FC<IProps> = ({activities, selectActivity, deleteActivity,submitting, activityTarget}) => {
+const ActivityList: React.FC<IProps> = ({ deleteActivity,submitting, activityTarget}) => {
+    const activityStore = useContext(ActivityStore)
+    const {selectActivity, activities} = activityStore
+
     return (
 
         <Segment  clearing>
@@ -46,3 +51,5 @@ export const ActivityList: React.FC<IProps> = ({activities, selectActivity, dele
    
     )
 }
+
+export default observer(ActivityList)
