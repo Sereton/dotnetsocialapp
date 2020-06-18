@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\netcorec#\\SocialApp\\API\\API.csproj": {}
+    "C:\\netcorec#\\SocialApp\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\netcorec#\\SocialApp\\API\\API.csproj": {
+    "C:\\netcorec#\\SocialApp\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\netcorec#\\SocialApp\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\netcorec#\\SocialApp\\API\\API.csproj",
+        "projectPath": "C:\\netcorec#\\SocialApp\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\netcorec#\\SocialApp\\API\\obj\\",
+        "outputPath": "C:\\netcorec#\\SocialApp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -4,18 +4,11 @@ import { IActivity } from '../../../App/Models/activity'
 import { observer } from 'mobx-react-lite'
 import ActivityStore from '../../../App/stores/activityStore'
 
-interface IProps {
- 
-    
-    deleteActivity: (id: string)=> void;
-    activityTarget: string;
-    submitting: boolean;
 
-}
 
-const ActivityList: React.FC<IProps> = ({ deleteActivity,submitting, activityTarget}) => {
+const ActivityList: React.FC = () => {
     const activityStore = useContext(ActivityStore)
-    const {selectActivity, activities} = activityStore
+    const {selectActivity,deleteActivity,submitting,activitiesByDate: activities,activityTarget} = activityStore
 
     return (
 

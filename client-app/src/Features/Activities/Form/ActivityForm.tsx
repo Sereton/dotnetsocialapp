@@ -1,20 +1,17 @@
-import React, { useState} from 'react'
+import React, { useState, useContext} from 'react'
 import { Segment, Form, Button } from 'semantic-ui-react'
 import { IActivity } from '../../../App/Models/activity'
 import {v4 as uuid} from 'uuid';
+import ActivityStore from '../../../App/stores/activityStore'
+import { observer } from 'mobx-react-lite';
 
-interface IProps{
-    showEdit: (editMode: boolean)=>void;
-    activity: IActivity;
-    createActivity: (activity: IActivity)=> void;
-    
-    editActivity: (activity: IActivity)=> void;
-    submitting: boolean;
-}
+
 
 // just renaming activity with the activity: newName
     
-export const ActivityForm: React.FC<IProps> = ({showEdit,activity: initializeFormState, createActivity, editActivity,submitting}) => { 
+const ActivityForm: React.FC = () => { 
+    const activityStore = useContext(ActivityStore);
+    const {createActivity,editActivity,showEdit,submitting,selectedActivity: initializeFormState} = activityStore
     const initializeForm =() => {
        return initializeFormState ? initializeFormState : {id:'', title:'',category:'',description:'',date:'',city:'',venue:''};
     }
@@ -52,3 +49,5 @@ export const ActivityForm: React.FC<IProps> = ({showEdit,activity: initializeFor
         </Segment>
     )
 }
+
+export default observer(ActivityForm)

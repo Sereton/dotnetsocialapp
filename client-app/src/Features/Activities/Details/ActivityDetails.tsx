@@ -1,22 +1,16 @@
 import React, {useContext} from 'react'
 import {  Card, Image,  Button } from 'semantic-ui-react'
-import { IActivity } from '../../../App/Models/activity'
 import ActivityStore from '../../../App/stores/activityStore'
 import { observer } from 'mobx-react-lite'
 
 
 
-interface IProps {
-    
-    
-    showEdit: (editMode: boolean)=> void;
-    setSelectedActivity: (activity: IActivity|null)=>void;
-}
 
 
-const ActivityDetails: React.FC<IProps> = ({ showEdit, setSelectedActivity}) => {
+
+const ActivityDetails: React.FC = () => {
   const activityStore = useContext(ActivityStore)
-    const { selectedActivity} =activityStore
+    const { selectedActivity, showEdit, setSelectedActivity} =activityStore
   
     return (
         
@@ -34,7 +28,7 @@ const ActivityDetails: React.FC<IProps> = ({ showEdit, setSelectedActivity}) => 
 <Card.Content extra>
   <Button.Group widths={2}>
       <Button basic onClick={()=> showEdit(true)} content="Edit" color="brown"/>
-      <Button basic onClick={()=>setSelectedActivity(null)} content="Cancel" color="grey"/>
+      <Button basic onClick={()=>setSelectedActivity(undefined)} content="Cancel" color="grey"/>
   </Button.Group>
 </Card.Content>
 </Card>
